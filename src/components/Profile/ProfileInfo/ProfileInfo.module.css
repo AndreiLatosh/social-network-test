@@ -1,0 +1,12 @@
+.backgroundPhoto {
+    text-align: center;
+}
+
+.backgroundPhoto img {
+    width: 100%;
+    height: 300px;
+}
+
+.descriptionWrapper {
+    padding: 10px;
+}
