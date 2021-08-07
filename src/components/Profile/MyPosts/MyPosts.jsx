@@ -18,7 +18,7 @@ const MyPosts = React.memo((props) => { //Dont work. 3 renders
             <h3>My posts</h3>
             <AddNewPostFormRedux onSubmit={addNewPost} />
             <div className={css.posts}>
-                {props.profilePage.posts.map(p => <Post message={p.message} likeCount={p.likeCount} />)}
+                {props.profilePage.posts.map(p => <Post key={p.id} message={p.message} likeCount={p.likeCount} />)}
             </div>
         </div>
     );
